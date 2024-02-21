@@ -1,0 +1,89 @@
+.main {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.rows {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container {
+    width: 49%;
+    margin-bottom: 8px;
+}
+
+#Col1 {
+    padding-left: 8px;
+}
+
+#Col2 {
+    padding-right: 8px;
+}
+
+#OreContainer {
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 1);
+    border-radius: 2px;
+}
+
+#OreLabel {
+    margin: 0;
+    padding: 0;
+    font-size:12px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+}
+
+#OreText {
+    padding: 0;
+    margin: 0;
+    font-size: 48px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+
+}
+
+#DigContainer {
+    padding-top: 8px;
+}
+
+.image-button {
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+}
+
+.image-button:active {
+}
+
+.image-button:disabled {
+    opacity: 0.5;
+}
+
+.list {
+    padding-top: 0px;
+    padding-right: 2px;
+    padding-bottom: 12px;
+    padding-left: 2px;
+}
