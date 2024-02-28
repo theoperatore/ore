@@ -1,10 +1,12 @@
 using System;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Mineable", menuName = "Game/Mineable", order = 0)]
-public class Mineable : ScriptableObject
+[CreateAssetMenu(fileName = "Currency", menuName = "Ore/Currency")]
+public class Currency : ScriptableObject
 {
-    public string mineableName = "Ore";
+    public string currencyName = "Ore";
+
+    [TextArea(10, 20)]
     public string description = "Something basic that anything can be made from. Valueable to all.";
 
     [SerializeField]
@@ -16,7 +18,7 @@ public class Mineable : ScriptableObject
     public event Action<long> OnChange;
 
     /// <summary>
-    /// Returns the current total of the mineable.
+    /// Returns the current total of the currency.
     /// </summary>
     /// <returns>the total count</returns>
     public long GetTotal()
@@ -25,7 +27,7 @@ public class Mineable : ScriptableObject
     }
 
     /// <summary>
-    /// Increment the mineable total by the amount.
+    /// Increment the currency total by the amount.
     /// </summary>
     /// <param name="amount">The amount to increment. Defaults to 1</param>
     public void Increment(int amount = 1)
@@ -35,7 +37,7 @@ public class Mineable : ScriptableObject
     }
 
     /// <summary>
-    /// ensures the amount of the mineable never dips negative
+    /// ensures the amount of the currency never dips negative
     /// </summary>
     /// <param name="amount">The amount of decrement. Defaults to 1</param>
     public void Decrement(int amount = 1)

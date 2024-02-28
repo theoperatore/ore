@@ -389,8 +389,10 @@ GameObject:
   - component: {fileID: 739318514}
   - component: {fileID: 739318513}
   - component: {fileID: 739318515}
+  - component: {fileID: 739318516}
+  - component: {fileID: 739318517}
   m_Layer: 5
-  m_Name: HUD
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -441,7 +443,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiDocument: {fileID: 739318513}
-  mineable: {fileID: 11400000, guid: 7664b9cdd22cc4ba5bc1d99d9c96d85c, type: 2}
+--- !u!114 &739318516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739318512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82f8961c899d546f897b054d7bcf943c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &739318517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739318512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e8c5c037bb43476c96647c0da3f1f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ore: {fileID: 11400000, guid: 7664b9cdd22cc4ba5bc1d99d9c96d85c, type: 2}
+  planet: {fileID: 11400000, guid: dfeac5c5d0a274fb888b0373b96bef75, type: 2}
+  uiController: {fileID: 739318515}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,6 +636,7 @@ GameObject:
   - component: {fileID: 1253280583}
   - component: {fileID: 1253280582}
   - component: {fileID: 1253280581}
+  - component: {fileID: 1253280585}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Untagged
@@ -701,6 +730,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1253280585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253280580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ced73205067304f7198e16b5ef8ff2d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 11400000, guid: dfeac5c5d0a274fb888b0373b96bef75, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

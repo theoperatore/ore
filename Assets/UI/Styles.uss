@@ -1,3 +1,7 @@
+Label {
+    color: white;
+}
+
 .main {
     flex-direction: column-reverse;
     align-items: stretch;
@@ -24,12 +28,12 @@
 }
 
 #OreContainer {
-    border-width: 1px;
-    border-color: rgba(0, 0, 0, 1);
-    border-radius: 2px;
+    /* border-width: 1px; */
+    /* border-color: rgb(100, 100, 100); */
+    /* border-radius: 2px; */
 }
 
-#OreLabel {
+.section-label {
     margin: 0;
     padding: 0;
     font-size:12px;
@@ -51,15 +55,15 @@
 }
 
 .image-button {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(33, 33, 33, 1);
     padding-top: 2px;
     padding-right: 2px;
     padding-bottom: 2px;
     padding-left: 2px;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
+
+    margin: 0;
+    margin-right: 4px;
+
     border-top-width: 1px;
     border-right-width: 1px;
     border-bottom-width: 1px;
@@ -68,13 +72,15 @@
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     border-bottom-left-radius: 2px;
-    border-left-color: rgb(255, 255, 255);
-    border-right-color: rgb(255, 255, 255);
-    border-top-color: rgb(255, 255, 255);
-    border-bottom-color: rgb(255, 255, 255);
+    border-color: rgb(174, 174, 174);
 }
 
-.image-button:active {
+.image-button:enabled:hover{
+    background-color: rgb(100, 100, 100);
+}
+
+.image-button:enabled:active {
+    background-color: rgb(0, 0, 0);
 }
 
 .image-button:disabled {
@@ -86,4 +92,47 @@
     padding-right: 2px;
     padding-bottom: 12px;
     padding-left: 2px;
+}
+
+.list-container {
+    /* padding-bottom: 2px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(174, 174, 174);
+    border-radius: 2px; */
+}
+
+#unity-low-button, #unity-high-button {
+    border-width: 0;
+    border-color: rgb(33, 33, 33);
+    background-color: transparent;
+    -unity-background-image-tint-color: rgb(221, 221, 221);
+    height: 14px;
+
+    display:none;
+}
+
+Scroller {
+    margin-top: 2px;
+    height: 14px;
+}
+
+#unity-slider {
+    border-radius: 2px;
+    height: 14px;
+    min-height: 14px;
+
+    margin: 0;
+}
+
+#unity-tracker {
+    border-width: 0;
+    /* background-color: rgba(33, 33, 33, 1); */
+    background-color: transparent;
+    border-color: rgb(33, 33, 33);
+}
+
+#unity-dragger {
+    border-radius: 8px;
+    background-color: rgb(221, 221, 221);
+    height: 8px;
 }

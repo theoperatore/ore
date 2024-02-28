@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac4b6e231575c404791624dc13e91a3f, type: 3}
   m_Name: Ore
   m_EditorClassIdentifier: 
+  currencyName: Ore
+  description: An exotic element that anything can be made from. Valueable to all.
   total: 0
